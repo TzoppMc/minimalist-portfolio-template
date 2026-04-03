@@ -1,1 +1,294 @@
-test
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Black & White</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header / Navigation -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <a href="#home">./portfolio</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">(01) Beranda</a></li>
+                <li><a href="#about" class="nav-link">(02) Tentang</a></li>
+                <li><a href="#work" class="nav-link">(03) Karya</a></li>
+                <li><a href="#contact" class="nav-link">(04) Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-label">
+                    <span class="line"></span>
+                    <span>HI THERE, I'M</span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-line">JOHN</span>
+                    <span class="name-line">DOE.</span>
+                </h1>
+                <div class="hero-role">
+                    <span class="role-text">CREATIVE</span>
+                    <span class="role-divider">/</span>
+                    <span class="role-text">DEVELOPER</span>
+                    <span class="role-divider">/</span>
+                    <span class="role-text">DESIGNER</span>
+                </div>
+                <p class="hero-description">Menciptakan pengalaman digital yang minimalis, 
+                fungsional, dan berkesan. Fokus pada detail dan kualitas.</p>
+                <div class="hero-buttons">
+                    <a href="#work" class="btn btn-primary">Lihat Karya →</a>
+                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Tahun Pengalaman</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Proyek Selesai</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Klien Puas</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">(02)</span>
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Saya adalah <span class="highlight">Creative Developer</span> yang berbasis di Jakarta.</h3>
+                    <p>Saya memiliki passion dalam menciptakan website yang tidak hanya indah secara visual, tetapi juga memberikan pengalaman pengguna yang luar biasa. Dengan pendekatan minimalis dan fokus pada detail, saya membantu brand dan individu mewujudkan visi digital mereka.</p>
+                    <p>Setiap proyek adalah kesempatan untuk belajar dan berkembang. Saya percaya bahwa desain yang baik adalah desain yang tidak terlihat — fungsional, intuitif, dan elegan.</p>
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <span class="info-label">Nama</span>
+                            <span class="info-value">John Doe</span>
+                        </div>
+                        <div class="about-info-item">
+                            <span class="info-label">Email</span>
+                            <span class="info-value">hello@johndoe.com</span>
+                        </div>
+                        <div class="about-info-item">
+                            <span class="info-label">Lokasi</span>
+                            <span class="info-value">Jakarta, ID</span>
+                        </div>
+                        <div class="about-info-item">
+                            <span class="info-label">Freelance</span>
+                            <span class="info-value">Tersedia</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary" id="download-cv">Download CV ↓</a>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">(03)</span>
+                <h2 class="section-title">Keahlian</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <ul class="skill-list">
+                            <li>React.js</li>
+                            <li>Vue.js</li>
+                            <li>Next.js</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <ul class="skill-list">
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Design</h3>
+                        <ul class="skill-list">
+                            <li>Figma</li>
+                            <li>Adobe XD</li>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <ul class="skill-list">
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>Figma</li>
+                            <li>Postman</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">(04)</span>
+                <h2 class="section-title">Karya Terpilih</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="work-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+            <div class="work-grid">
+                <!-- Projects will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">(05)</span>
+                <h2 class="section-title">Hubungi Saya</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Ada proyek dalam pikiran?</h3>
+                    <p>Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk diskusi dan kolaborasi baru.</p>
+                    <div class="contact-info-list">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:hello@johndoe.com">hello@johndoe.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span>GitHub</span>
+                                <a href="#">/johndoe</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <span>LinkedIn</span>
+                                <a href="#">/in/johndoe</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <span>Instagram</span>
+                                <a href="#">@johndoe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nama</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Pesan</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan →</button>
+                    <div id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">./portfolio</div>
+                <p>&copy; <span id="current-year"></span> John Doe. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Beranda</a>
+                    <a href="#about">Tentang</a>
+                    <a href="#work">Karya</a>
+                    <a href="#contact">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- External JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
